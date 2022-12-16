@@ -64,9 +64,14 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Bank Note Total'),
+          centerTitle: true,
+          title: const Text(
+            'Bank Note Total',
+            textAlign: TextAlign.center,
+          ),
         ),
         body: SingleChildScrollView(
           child: Padding(
